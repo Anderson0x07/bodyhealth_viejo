@@ -17,13 +17,13 @@ import java.util.Optional;
 @Controller
 @Slf4j
 public class ClienteController {
-
+/*
     @Autowired
     private ClienteService clienteService;
 
     @GetMapping("/admin/usuarios")
     public String listarClientes(Model model){
-        List<Cliente> clientes = clienteService.listarClientes();
+       List<Cliente> clientes = clienteService.listarClientes();
 
         model.addAttribute("clientes",clientes);
 
@@ -53,5 +53,5 @@ public class ClienteController {
     public String eliminar(Cliente cliente){
         clienteService.eliminar(cliente);
         return "redirect:/admin/usuarios";
-    }
+    } */
 }

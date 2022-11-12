@@ -7,6 +7,7 @@ import java.io.Serializable;
 @Entity
 @Data
 @Table(name = "pedido")
+@IdClass(value = PedidoPK.class)
 public class Pedido implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -16,8 +17,8 @@ public class Pedido implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id_producto;
 
-    @OneToOne
-    @PrimaryKeyJoinColumn
+    @ManyToOne
+    @PrimaryKeyJoinColumn(name = "id_producto",foreignKey = @ForeignKey(name = "FK_P_P"))
     private Producto producto;
 
     @Id

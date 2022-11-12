@@ -7,19 +7,22 @@ import java.io.Serializable;
 @Entity
 @Data
 @Table(name = "horario_entrenador")
+@IdClass(value = HorarioEntrenadorPK.class)
 public class HorarioEntrenador implements Serializable {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int documentoE;
-    @OneToOne
-    @PrimaryKeyJoinColumn
+
+    @ManyToOne
+    @PrimaryKeyJoinColumn(name = "documentoE",foreignKey = @ForeignKey(name = "FK_E_HE"))
     private Entrenador entrenador;
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id_horario;
-    @OneToOne
-    @PrimaryKeyJoinColumn
+
+    @ManyToOne
+    @PrimaryKeyJoinColumn(name = "id_horario",foreignKey = @ForeignKey(name = "FK_H_HE"))
     private Horario horario;
+
+
 
 }
