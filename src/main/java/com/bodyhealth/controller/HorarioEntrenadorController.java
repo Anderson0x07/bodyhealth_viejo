@@ -1,2 +1,4 @@
-package com.bodyhealth.controller;public class HorarioEntrenadorController {
+package com.bodyhealth.controller;
+
+public class HorarioEntrenadorController {
 }

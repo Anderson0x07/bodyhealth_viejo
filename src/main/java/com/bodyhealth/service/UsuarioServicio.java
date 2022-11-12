@@ -1,4 +1,4 @@
-package templates.service;
+package com.bodyhealth.service;
 
 import com.bodyhealth.model.Usuario;
 import com.bodyhealth.repository.UsuarioRepo;

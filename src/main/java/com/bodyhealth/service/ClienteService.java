@@ -1,4 +1,4 @@
-package templates.service;
+package com.bodyhealth.service;
 
 
 import com.bodyhealth.model.Cliente;
@@ -12,5 +12,6 @@ public interface ClienteService {
     public void guardar(Cliente cliente);
 
     public void eliminar(Cliente cliente);
-    public Cliente encontrarPersona(Cliente cliente);
+
+    public Cliente encontrarCliente(Cliente cliente);
 }

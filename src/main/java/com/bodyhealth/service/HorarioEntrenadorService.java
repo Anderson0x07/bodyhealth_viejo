@@ -1,2 +1,17 @@
-package com.bodyhealth.service;public interface HorarioEntrenadorService {
+package com.bodyhealth.service;
+
+import com.bodyhealth.model.Entrenador;
+import com.bodyhealth.model.Horario;
+import com.bodyhealth.model.HorarioEntrenador;
+
+import java.util.List;
+
+public interface HorarioEntrenadorService {
+
+    public void AsignarHorarioEntrenador(HorarioEntrenador horarioEntrenador);
+
+    public void EliminarHorarioEntrenador(HorarioEntrenador horarioEntrenador);
+
+
+    public List<HorarioEntrenador> BuscarHorarioEntrenador(HorarioEntrenador horarioEntrenador);
 }

@@ -42,7 +42,7 @@ public class ClienteController {
     @GetMapping("/admin/editar/{documento}")
     public String editar(Cliente cliente, Model model){
 
-        cliente = clienteService.encontrarPersona(cliente);
+        cliente = clienteService.encontrarCliente(cliente);
 
         model.addAttribute("cliente",cliente);
 

@@ -24,7 +24,7 @@ public class Producto implements Serializable{
     private int stock;
 
 
-    private int precio;
+    private double precio;
 
     @ManyToOne
     @JoinColumn(name = "idProveedor")

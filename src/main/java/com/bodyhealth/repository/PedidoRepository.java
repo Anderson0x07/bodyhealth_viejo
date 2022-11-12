@@ -1,2 +1,7 @@
-package com.bodyhealth.repository;public interface PedidoRepository {
+package com.bodyhealth.repository;
+
+import com.bodyhealth.model.Pedido;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface PedidoRepository extends JpaRepository<Pedido,Integer> {
 }
