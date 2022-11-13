@@ -7,7 +7,7 @@ import java.io.Serializable;
 @Entity
 @Data
 @Table(name = "h_entrenadorcliente")
-@IdClass(value = H_EntrenadorClientePK.class)
+@IdClass(H_EntrenadorClientePK.class)
 public class H_EntrenadorCliente implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -18,9 +18,9 @@ public class H_EntrenadorCliente implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int documentoC;
+    private int documento;
     @ManyToOne
-    @PrimaryKeyJoinColumn(name = "documentoC",foreignKey = @ForeignKey(name = "FK_C_HEC"))
+    @PrimaryKeyJoinColumn(name = "documento",foreignKey = @ForeignKey(name = "FK_C_HEC"))
     private Cliente cliente;
 
     @Id

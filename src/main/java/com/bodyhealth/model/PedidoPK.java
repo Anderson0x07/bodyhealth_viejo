@@ -8,4 +8,6 @@ import java.io.Serializable;
 public class PedidoPK implements Serializable {
     @Column(name = "id_producto")
     private int id_producto;
+    @Column(name = "id_compra")
+    private int id_compra;
 }

@@ -7,7 +7,7 @@ import java.io.Serializable;
 @Entity
 @Data
 @Table(name = "horario_entrenador")
-@IdClass(value = HorarioEntrenadorPK.class)
+@IdClass(HorarioEntrenadorPK.class)
 public class HorarioEntrenador implements Serializable {
     @Id
     private int documentoE;

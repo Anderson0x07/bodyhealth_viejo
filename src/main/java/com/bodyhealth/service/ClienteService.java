@@ -2,9 +2,10 @@ package com.bodyhealth.service;
 
 
 import com.bodyhealth.model.Cliente;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+@Service
 public interface ClienteService {
 
     public List<Cliente> listarClientes();

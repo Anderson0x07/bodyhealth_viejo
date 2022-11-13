@@ -2,9 +2,10 @@ package com.bodyhealth.service;
 
 import com.bodyhealth.model.*;
 import net.bytebuddy.asm.Advice;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+@Service
 public interface H_EntrenadorClienteService {
 
     public List<H_EntrenadorCliente> listarH_EntrenadorCliente();
